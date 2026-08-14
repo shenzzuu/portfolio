@@ -1,0 +1,127 @@
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.experience-card {
+  padding: 3rem;
+  position: relative;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.exp-header h3 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  letter-spacing: -0.02em;
+}
+
+.icon-accent {
+  color: var(--primary);
+  filter: drop-shadow(0 2px 8px var(--primary-glow));
+}
+
+.exp-date {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.exp-company {
+  font-size: 1.15rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.exp-details {
+  list-style-type: none;
+  padding-left: 0;
+  color: var(--text-muted);
+}
+
+.exp-details li {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.exp-details li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.exp-cgpa {
+  color: var(--text-color);
+  font-weight: 600;
+  margin-top: 1rem;
+  display: inline-block;
+  background: rgba(13, 148, 136, 0.1);
+  padding: 6px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(13, 148, 136, 0.2);
+}
+
+[data-theme='dark'] .exp-cgpa {
+  background: rgba(52, 211, 153, 0.1);
+  border: 1px solid rgba(52, 211, 153, 0.2);
+}
+
+@media (max-width: 600px) {
+  .exp-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .experience-card {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-card {
+    padding: 1.5rem;
+  }
+  .exp-header h3 {
+    font-size: 1.3rem;
+  }
+  .exp-company {
+    font-size: 1.05rem;
+  }
+}
+
+.hover-lift {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(13, 148, 136, 0.1), inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+[data-theme='dark'] .hover-lift:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.text-accent {
+  color: var(--primary);
+}
+
+.font-semibold {
+  font-weight: 600;
+}

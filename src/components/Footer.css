@@ -1,0 +1,92 @@
+.footer {
+  background: transparent;
+  border-top: 1px solid var(--glass-border);
+  padding-top: 5rem;
+  margin-top: 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, var(--primary-glow), transparent);
+  z-index: -1;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.footer-brand h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, var(--text-color), var(--primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-brand p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.footer-links h3, .footer-contact h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  color: var(--text-color);
+  letter-spacing: 0.5px;
+}
+
+.footer-links ul li {
+  margin-bottom: 1rem;
+}
+
+.footer-links ul li a, .footer-contact p a {
+  color: var(--text-muted);
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-weight: 600;
+  display: inline-flex;
+}
+
+.footer-links ul li a:hover, .footer-contact p a:hover {
+  color: var(--primary);
+  transform: translateX(4px);
+}
+
+.footer-contact p {
+  margin-bottom: 1rem;
+}
+
+.email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 1px solid var(--glass-border);
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.02);
+}
