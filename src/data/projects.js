@@ -13,7 +13,7 @@ export const projectsData = [
     type: 'featured',
     isMobile: true,
     image: '/planprep-main.jpg',
-    apkUrl: '/PlanPrep.apk',
+    apkUrl: 'https://drive.google.com/uc?export=download&id=1RkeRfmCrgmo9zM0GH6-yI8yYGLdEt6j5',
     screenshots: ['/planprep-ss1.jpg', '/planprep-ss2.jpg', '/planprep-ss3.jpg'],
     codeUrl: 'https://github.com/shenzzuu/PlanPrep-Mobile-App'
   },
