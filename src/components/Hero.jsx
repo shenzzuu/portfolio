@@ -60,7 +60,7 @@ const Hero = () => {
               </a>
             </Magnetic>
             <Magnetic>
-              <a href="/resume.pdf" download="Muhammad_Hafiz_Resume.pdf" className="btn btn-fintech-outline" aria-label="Download Muhammad Hafiz's CV">
+              <a href="/MUHAMMAD%20HAFIZ%20BIN%20MOHD%20RAFI%20RESUME.pdf" download="MUHAMMAD HAFIZ BIN MOHD RAFI RESUME.pdf" className="btn btn-fintech-outline" aria-label="Download Muhammad Hafiz's CV">
                 Download CV <Download size={18} />
               </a>
             </Magnetic>
