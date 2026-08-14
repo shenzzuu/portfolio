@@ -1,6 +1,6 @@
 # Muhammad Hafiz - Developer Portfolio
 
-![Portfolio Preview](./public/favicon.svg)
+<img src="./public/favicon.svg" width="80" height="80" alt="Portfolio Logo" />
 
 A modern, highly responsive developer portfolio built from scratch to showcase my skills, experience, and projects. The design features a custom "premium fintech glassmorphism" aesthetic with smooth animations and dynamic components.
 
