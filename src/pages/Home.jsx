@@ -4,6 +4,7 @@ import Hero from '../components/Hero';
 import About from '../components/About';
 import Experience from '../components/Experience';
 import Projects from '../components/Projects';
+import GithubActivity from '../components/GithubActivity';
 import Contact from '../components/Contact';
 
 const Home = () => {
@@ -30,6 +31,7 @@ const Home = () => {
       <About />
       <Experience />
       <Projects />
+      <GithubActivity />
       <Contact />
     </main>
   );
