@@ -6,6 +6,7 @@ import Experience from '../components/Experience';
 import Projects from '../components/Projects';
 import GithubActivity from '../components/GithubActivity';
 import Contact from '../components/Contact';
+import Certificates from '../components/Certificates';
 
 const Home = () => {
   const location = useLocation();
@@ -30,6 +31,7 @@ const Home = () => {
       <Hero />
       <About />
       <Experience />
+      <Certificates />
       <Projects />
       <GithubActivity />
       <Contact />

@@ -14,7 +14,7 @@ const Navbar = ({ theme, toggleTheme }) => {
       setScrolled(window.scrollY > 50);
 
       // Determine active section
-      const sections = ['about', 'experience', 'projects', 'contact'];
+      const sections = ['about', 'experience', 'certificates', 'projects', 'github-activity', 'contact'];
       let current = '';
 
       for (const section of sections) {
@@ -65,7 +65,10 @@ const Navbar = ({ theme, toggleTheme }) => {
               <Magnetic><Link to="/#experience" className={activeSection === 'experience' ? 'active' : ''}>Experience</Link></Magnetic>
             </li>
             <li>
-              <Magnetic><Link to="/#projects" className={activeSection === 'projects' ? 'active' : ''}>Projects</Link></Magnetic>
+              <Magnetic><Link to="/#certificates" className={activeSection === 'certificates' ? 'active' : ''}>Certificates</Link></Magnetic>
+            </li>
+            <li>
+              <Magnetic><Link to="/#projects" className={activeSection === 'projects' || activeSection === 'github-activity' ? 'active' : ''}>Projects</Link></Magnetic>
             </li>
             <li>
               <Magnetic><Link to="/#contact" className={activeSection === 'contact' ? 'active' : ''}>Contact</Link></Magnetic>
@@ -117,7 +120,10 @@ const Navbar = ({ theme, toggleTheme }) => {
             <Link to="/#experience" onClick={() => setIsMobileMenuOpen(false)} className={activeSection === 'experience' ? 'active' : ''}>Experience</Link>
           </li>
           <li>
-            <Link to="/#projects" onClick={() => setIsMobileMenuOpen(false)} className={activeSection === 'projects' ? 'active' : ''}>Projects</Link>
+            <Link to="/#certificates" onClick={() => setIsMobileMenuOpen(false)} className={activeSection === 'certificates' ? 'active' : ''}>Certificates</Link>
+          </li>
+          <li>
+            <Link to="/#projects" onClick={() => setIsMobileMenuOpen(false)} className={activeSection === 'projects' || activeSection === 'github-activity' ? 'active' : ''}>Projects</Link>
           </li>
           <li>
             <Link to="/#contact" onClick={() => setIsMobileMenuOpen(false)} className={activeSection === 'contact' ? 'active' : ''}>Contact</Link>
