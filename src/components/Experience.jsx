@@ -61,7 +61,7 @@ const Experience = () => {
             <span className="exp-date glass-pill-small">Graduating 2026</span>
           </div>
           <h4 className="exp-company">UiTM Arau</h4>
-          <p className="exp-cgpa">CGPA: 3.24</p>
+          <p className="exp-cgpa">CGPA: 3.32</p>
         </motion.div>
 
         <motion.div className="experience-card glass-card mt-4" variants={itemVariants}>
